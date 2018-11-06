@@ -13,8 +13,8 @@ var blockchain *core.BlockChain
 func run() {
 	http.HandleFunc("/blockchain/get", blockchainGetHandle)
 	http.HandleFunc("/blockchain/write", blockchainWriteHandle)
-	fmt.Println("the server is running at locahost:dev")
-	http.ListenAndServe("localhost:dev", nil)
+	fmt.Println("the server is running at locahost:easy")
+	http.ListenAndServe("localhost:easy", nil)
 }
 
 func blockchainGetHandle(w http.ResponseWriter, r *http.Request) {
